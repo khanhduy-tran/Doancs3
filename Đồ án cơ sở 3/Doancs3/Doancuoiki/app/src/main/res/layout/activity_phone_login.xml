@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PhoneLoginActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:background="@drawable/login_background"
+        android:id="@+id/login_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="cursive"
+            android:paddingBottom="10dp"
+            android:text="Da Nang Hotel"
+            android:textColor="@color/themeColor"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Xin chào Quý Khách"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/black"
+            />
+
+        <EditText
+            android:id="@+id/inputuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/input_back_accent"
+            android:drawableLeft="@drawable/male_user_80px"
+            android:drawablePadding="4sp"
+            android:hint="Nhập tài khoản"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/inputpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/input_back_accent"
+            android:drawableLeft="@drawable/password_80px"
+            android:drawablePadding="4sp"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword" />
+        <CheckBox
+            android:id="@+id/checkBoxTaiKhoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhớ tài khoản"/>
+
+        <Button
+
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_primary_gradient"
+            android:drawableRight="@drawable/arroe_right"
+            android:drawablePadding="@dimen/padding_4"
+            android:text="@string/loginBtn"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/sign_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_primary_red"
+            android:drawableRight="@drawable/arroe_right"
+            android:drawablePadding="@dimen/padding_4"
+            android:text="Đăng Ký"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@null" />
+        <TextView
+            android:id="@+id/textViewQMK"
+            android:textColor="#0040FF"
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu ?"/>
+
+    </LinearLayout>
+
+</LinearLayout>

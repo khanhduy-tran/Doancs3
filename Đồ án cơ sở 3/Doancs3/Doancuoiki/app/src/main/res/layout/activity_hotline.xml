@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.HotlineActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarHotLine"
+        app:titleTextColor="#FF0051"
+        android:background="#00E6FF"
+        app:title="Hotline"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bghotel124"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/iconhotel"/>
+        <TextView
+            android:fontFamily="@font/dancing_script"
+            android:textColor="#0428F4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đà Nẵng Hotel"
+            android:textSize="24sp"/>
+        <TextView
+            android:fontFamily="sans-serif-light"
+            android:textColor="#FF001E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.dananghotel.com.vn"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+           android:textColor="#0040FF"
+           android:paddingRight="10dp"
+           android:paddingLeft="10dp"
+           android:textSize="25sp"
+           android:fontFamily="sans-serif-light"
+           android:layout_marginTop="10dp"
+           android:gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Mọi thắc mắc xin vui lòng liên hệ đường dây nóng ở bên dưới để để hổ trợ, Đà Nẵng Hotel hân hạnh phục vụ quý khách !"/>
+       <TextView
+           android:layout_marginTop="40dp"
+           android:textColor="#FF001E"
+           android:textSize="30sp"
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0329334542"/>
+       <Button
+           android:id="@+id/buttonHotline"
+           android:layout_gravity="center"
+           android:drawableLeft="@drawable/phones_80px"
+           android:layout_marginTop="50dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:textColor="@color/white"
+           android:background="@drawable/btn_primary_gradient"
+           android:text="Gọi Ngay"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+   </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Doancuoiki</string>
+    <string name="welcome_to_n_da_nang_hotel">Welcome to\n Da Nang hotel</string>
+    <string name="map_api_key">AIzaSyDNI_ZWPqvdS6r6gPVO50I4TlYkfkZdXh8</string>
+    <string name="facebook_app_id">327424232202183</string>
+    <string name="fb_login_protocol_scheme">fb327424232202183</string>
+
+
+    <string name="MobileHint">Số điện thoại di động 10 chữ số</string>
+    <string name="loginBtn">Đăng nhập</string>
+    <string name="invalidMobile">Số điện thoại di động không hợp lệ</string>
+    <string name="hint_otp_activity">Chúng tôi đã gửi \ "OTP 4 chữ số \"</string>
+    <string name="edit">Sửa</string>
+    <string name="verify">Kiểm chứng</string>
+    <string name="nameHint">Nhập tên của bạn</string>
+    <string name="emailHint">Nhập email của bạn</string>
+    <string name="save">Lưu</string>
+
+    <string name="title_home">Trang chủ</string>
+    <string name="title_bookings">Đặt chỗ</string>
+    <string name="title_profile"></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_location">Nhập vị trí của bạn</string>
+    <string name="search">Tìm</string>
+    <string name="view_btn">Lượt xem</string>
+    <string name="book_btn">Đặt ngay</string>
+    <string name="near_me">Tìm FOD gần tôi</string>
+    <string name="invalid_lat_long_used">Không hợp lệ</string>
+    <string name="service_not_available">Dịch vụ không khả dụng</string>
+    <string name="no_address_found">Không tìm thấy địa chỉ</string>
+    <string name="recent_news">Tin tức</string>
+    <string name="publish_date">Ngày</string>
+    <string name="in_news">tin tức</string>
+    <string name="address">Địa chỉ</string>
+    <string name="price">Price Breakup</string>
+    <string name="security_money">Security Money</string>
+    <string name="monthly_money">Monthly Payment</string>
+    <string name="security_money_hint">* Your security money will be refunded after the completion of your booking tenure.
+    </string>
+    <string name="electricity_money">Electricity Charge</string>
+    <string name="cities">Cities</string>
+    <string name="note">Please Read</string>
+    <string name="note_1">1. Guest can check in using any local or outstation ID Proof    (PAN card not accepted).</string>
+    <string name="note_2">2. Couples are welcome.</string>
+    <string name="note_3">3. All Nationals are allowed.</string>
+    <string name="id_text">ID Proof</string>
+    <string name="id_hint">This will be used to verify your identity</string>
+    <string name="adhaar">Adhaar Card</string>
+    <string name="passport">Passport</string>
+    <string name="Account_Details">User Details</string>
+    <string name="checkout">Checkout</string>
+    <string name="boking_for">Booking For</string>
+    <string name="or">OR</string>
+    <string name="or_advance">Make an advance payment of Rs 1000.00 to book this flat.</string>
+    <string name="selectDate">Date From</string>
+    <string name="selectDateTo">Date To</string>
+    <string name="dateFormat" translatable="false">EE, dd MMM</string>
+    <string name="timeFormat" translatable="false">EE, dd MMM HH:mm</string>
+    <string name="period" translatable="false">%1$s – %2$s</string>
+    <string name="logout">Logout</string>
+    <string name="title_bookings_date">Booked On</string>
+    <string name="property_name">Property Name</string>
+    <string name="basic">Basic Details</string>
+    <string name="fatherName">Father Name</string>
+    <string name="addres_details">Maheru Colony Near Law gate (LPU) , Jalandhar , Punjab , India</string>
+    <string name="fatherMobile">Contact No.</string>
+    <string name="currentPg">Current FOD</string>
+    <string name="fod_name">FOD</string>
+    <string name="care_taker_mobile">Contact Person</string>
+    <string name="no_booking">You don\'t have any current booking with us</string>
+    <string name="Bookings">Bookings</string>
+    <string name="Payment_remainder">Payment Remainder</string>
+    <string name="maintainance">Maintainance</string>
+    <string name="letsgetStarted">Bạn đã sẵn sàng ?</string>
+    <string name="Offer">OFFER NAME</string>
+    <string name="couponCodeDetails">Coupon Code Details goes here like Book now and get 30 % Off</string>
+
+
+</resources>

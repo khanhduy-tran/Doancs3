@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/acme</item>
+        <item>@font/actor</item>
+        <item>@font/akronim</item>
+        <item>@font/allan_bold</item>
+        <item>@font/almendra_bold</item>
+        <item>@font/amita</item>
+        <item>@font/amita_bold</item>
+        <item>@font/arimo_bold_italic</item>
+        <item>@font/atomic_age</item>
+        <item>@font/bad_script</item>
+        <item>@font/bitter</item>
+        <item>@font/dancing_script</item>
+        <item>@font/farsan</item>
+    </array>
+</resources>

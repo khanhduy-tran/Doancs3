@@ -1,0 +1,24 @@
+package com.khanhduy.doancuoiki.Activity;
+
+import androidx.appcompat.app.AppCompatActivity;
+import com.khanhduy.doancuoiki.R;
+
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
+import android.os.Bundle;
+import android.util.Base64;
+import android.util.Log;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+public class GioiThieuActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_gioi_thieu);
+
+    }
+}

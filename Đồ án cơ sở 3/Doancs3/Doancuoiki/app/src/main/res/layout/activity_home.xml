@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HomeActivity">
+
+   <LinearLayout
+       android:visibility="gone"
+       android:orientation="vertical"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/textViewIdUserHome"
+           android:visibility="gone"
+           android:text="hello"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:id="@+id/textViewNameUserHome"
+           android:visibility="gone"
+           android:text="hello"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:id="@+id/textViewBdUserHome"
+           android:visibility="gone"
+           android:text="hello"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:id="@+id/textViewDiachiUserHome"
+           android:visibility="gone"
+           android:text="hello"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:id="@+id/textViewEmailUserHome"
+           android:visibility="gone"
+           android:text="hello"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:id="@+id/textViewPhoneUserHome"
+           android:visibility="gone"
+           android:text="hello"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:id="@+id/textViewTaikhoanUserHome"
+           android:visibility="gone"
+           android:text="hello"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:id="@+id/textViewPassUserHome"
+           android:visibility="gone"
+           android:text="hello"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+   </LinearLayout>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawbleMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:fitsSystemWindows="true"
+            app:titleTextColor="#3F51B5"
+            app:title="Đà Nẵng Hotel"
+            android:id="@+id/toolbarMain"
+            android:background="#00E6FF"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+        </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_above="@id/nav_bottomMain"
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/nav_bottomMain"
+                    android:gravity = "bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:menu="@menu/navigation"
+                    android:background="@color/white"
+                    app:itemIconTint="@color/nav_item_colors"
+                    app:itemTextColor="@color/nav_item_colors"
+                    >
+                </com.google.android.material.bottomnavigation.BottomNavigationView >
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:background="#ffffff"
+            android:id="@+id/navigationMain"
+            android:layout_gravity= "start|left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/menu_nav">
+
+<!--            <ListView-->
+<!--                android:background="#ffffff"-->
+<!--                android:id="@+id/listViewMain"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"></ListView>-->
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>
+
+

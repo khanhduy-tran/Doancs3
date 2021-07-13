@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Trang chủ"
+        android:icon="@drawable/home_80px"
+        />
+    </group>
+
+        <item
+            android:title="Loại phòng">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item android:id="@+id/phongStandard"
+                    android:title="Phòng Standard"
+                    android:icon="@drawable/room_80px"/>
+                <item android:id="@+id/phongSuperior"
+                    android:title="Phòng Superior"
+                    android:icon="@drawable/room_80px"/>
+                <item  android:id="@+id/phongDeluxe"
+                    android:title="Phòng Deluxe"
+                    android:icon="@drawable/room_80px"/>
+                <item android:title="Phòng Trống"
+                    android:icon="@drawable/null_symbol_80px"
+                    android:id="@+id/phongTrong"/>
+                </group>
+            </menu>
+        </item>
+
+
+        <item android:title="Thông tin">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item android:id="@+id/gioithieu"
+                    android:title="Giới thiệu"
+                    android:icon="@drawable/name_tag_80px"/>
+                <item android:id="@+id/hotline"
+                    android:title="Hotline"
+                    android:icon="@drawable/hotline_80px"/>
+                </group>
+            </menu>
+        </item>
+
+
+        <item android:title="Tài Khoản">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/likeroom"
+                        android:title="Phòng Yêu Thích"
+                        android:icon="@drawable/favorite_folder_80px"/>
+                <group android:checkableBehavior="single"/>
+                    <item
+                        android:id="@+id/likedichvu"
+                        android:title="Dịch Vụ Yêu Thích"
+                        android:icon="@drawable/favorite_folder_80px"/>
+                <item android:id="@+id/logout"
+                    android:title="Đăng xuất"
+                    android:icon="@drawable/logout_rounded_up_80px"/>
+                </group>
+            </menu>
+        </item>
+
+</menu>

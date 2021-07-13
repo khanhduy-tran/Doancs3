@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ThanhtoanActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarHoaDon"
+        app:titleTextColor="#FF0051"
+        android:background="#00E6FF"
+        app:title="Hóa Đơn"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/editTextTenThanhToan"
+            android:background="@drawable/input_back_accent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Họ tên khách hàng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/editTextDiaChiThanhToan"
+            android:background="@drawable/input_back_accent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Địa chỉ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/editTextEmailThanhToan"
+            android:background="@drawable/input_back_accent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/editTextPhoneThanhToan"
+            android:background="@drawable/input_back_accent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Số điện thoại"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:drawableRight="@drawable/lock1_80px"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/editTextLoaiPhongThanhToan"
+            android:background="@drawable/input_back_accent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Loại phòng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:drawableRight="@drawable/lock1_80px"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/editTextTenPhongThanhToan"
+            android:background="@drawable/input_back_accent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Tên phòng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:drawableRight="@drawable/lock1_80px"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/editTextGiaPhongThanhToan"
+            android:background="@drawable/input_back_accent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Giá phòng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+
+            android:fontFamily="sans-serif-light"
+            android:drawableRight="@drawable/pay_date_80px"
+            android:id="@+id/editTextNgayDatPhongThanhToan"
+            android:background="@drawable/input_back_accent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Ngày đặt phòng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:fontFamily="sans-serif-light"
+            android:drawableRight="@drawable/pay_date_80px"
+            android:id="@+id/editTextNgayTraPhongThanhToan"
+            android:background="@drawable/input_back_accent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Ngày trả phòng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/buttonXacNhanThanhToan"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_primary_red"
+            android:text="Xác nhận"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

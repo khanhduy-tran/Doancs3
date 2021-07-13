@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ChitietphongActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarDetailRoom"
+        app:titleTextColor="#FF0051"
+        android:background="#00E6FF"
+        app:title="Chi Tiết Phòng"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageViewDetailRoom"
+        android:layout_margin="10dp"
+        android:src="@drawable/image_48px"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/dancing_script"
+                android:id="@+id/textViewTenDetailRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Tên Phòng"
+                android:textColor="#0E0E0E"
+                android:textSize="20sp"
+                 />
+            <TextView
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/textViewGiaDetailRoom"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:text="Giá sản phẩm"
+                android:textColor="#ff00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+               <LinearLayout
+                   android:weightSum="10"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <LinearLayout
+                       android:layout_marginLeft="20dp"
+                       android:layout_weight="5"
+                       android:orientation="vertical"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <ImageView
+                           android:id="@+id/imageViewLike"
+                           android:layout_width="40dp"
+                           android:layout_height="40dp"
+                           android:paddingLeft="5dp"
+                           app:srcCompat="@drawable/ic_baseline_favorite_24" />
+                       <ImageView
+                           android:id="@+id/imageViewShare"
+                           android:paddingLeft="5dp"
+                           app:srcCompat="@drawable/sharefb"
+                           android:layout_width="40dp"
+                           android:layout_height="40dp"/>
+                   </LinearLayout>
+               <Button
+                   android:layout_marginRight="5dp"
+                   android:layout_weight="5"
+                   android:id="@+id/buttonDatPhong"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp"
+                   android:background="@drawable/btn_primary_red"
+                   android:drawableLeft="@drawable/buying_80px"
+                   android:drawablePadding="@dimen/padding_4"
+                   android:text="Đặt Phòng"
+                   android:textColor="@android:color/white"
+                   app:backgroundTint="@null" />
+               </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:fontFamily="@font/dancing_script"
+            android:background="#841EFF00"
+            android:textColor="#0062FF"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+            android:text="Mô tả phòng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-light"
+                android:padding="5dp"
+                android:text="mô tả"
+                android:textSize="20dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/textViewMotaDetailRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+               <ImageView
+                   android:layout_marginTop="10dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/image_48px"
+                   android:id="@+id/imageView2DetailRoom"
+                   android:layout_width="300dp"
+                   android:layout_height="200dp"/>
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/image_48px"
+                    android:id="@+id/imageView3DetailRoom"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"/>
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/image_48px"
+                    android:id="@+id/imageView4DetailRoom"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"/>
+           </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

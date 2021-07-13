@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:background="#00FFFF"
+        android:id="@+id/cardViewLikeRoom"
+        app:cardCornerRadius="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2.5dp">
+        <FrameLayout
+            android:background="#3500B0FF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                app:srcCompat="@drawable/ic_baseline_fiber_new_24"
+                android:layout_gravity="top|right"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/image_48px"
+                    android:id="@+id/imageViewLikeRoom"
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2.5dp" />
+                <TextView
+                    android:fontFamily="@font/dancing_script"
+                    android:gravity="center"
+                    android:textColor="#0D0D0B"
+                    android:text="Phòng 1"
+                    android:id="@+id/textViewLikeRoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:text="30000"
+                    android:gravity="center"
+                    android:id="@+id/textViewGiaLikeRoom"
+                    android:textColor="#ff00"
+                    android:textSize="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

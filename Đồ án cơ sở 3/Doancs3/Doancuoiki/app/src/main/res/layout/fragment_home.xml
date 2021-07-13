@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+          <com.google.android.material.appbar.CollapsingToolbarLayout
+              android:id="@+id/CollapsingToolbarLayout"
+              android:layout_width="match_parent"
+              android:layout_height="256dp"
+              app:titleEnabled="false"
+              app:layout_scrollFlags="scroll|exitUntilCollapsed"
+              >
+              <ViewFlipper
+                  android:scaleType="centerCrop"
+                  app:layout_collapseMode="parallax"
+                  android:id="@+id/viewLipperHome"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+              </ViewFlipper>
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:alpha="1"/>
+              <androidx.appcompat.widget.Toolbar
+                  android:layout_width="match_parent"
+                  android:layout_height="?attr/actionBarSize"
+                  app:layout_collapseMode="pin"
+                  android:layout_marginBottom="-10dp"
+                  android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+              <com.google.android.material.tabs.TabLayout
+                  android:background="#00E6FF"
+                  android:id="@+id/tab_layoutHome"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="bottom"
+                  app:tabSelectedTextColor="#FF0015"/>
+          </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.khanhduy.doancuoiki.CustomViewPager.CustomViewPager
+            android:id="@+id/view_pagerHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

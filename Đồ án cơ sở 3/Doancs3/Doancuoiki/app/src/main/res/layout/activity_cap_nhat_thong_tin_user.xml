@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CapNhatThongTinUserActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarCNTTCN"
+        app:titleTextColor="#FF0051"
+        android:background="#00E6FF"
+        app:title="Cập nhật thông tin cá nhân"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/editTextHoTenUpdate"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_back_accent"
+            android:drawableLeft="@drawable/name_80px"
+            android:drawablePadding="4sp"
+            android:hint="Họ tên"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/editTextBirtdayUpdate"
+            android:drawableRight="@drawable/pay_date_80px"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_back_accent"
+            android:drawableLeft="@drawable/birthday_80px"
+            android:drawablePadding="4sp"
+            android:hint="Ngày sinh"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/editTextDiaChiUpdate"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_back_accent"
+            android:drawableLeft="@drawable/address_80px"
+            android:drawablePadding="4sp"
+            android:hint="Địa chỉ"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextEmailUpdate"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_back_accent"
+            android:drawableLeft="@drawable/email_80px"
+            android:drawablePadding="4sp"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/editTextSDTUpdate"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_back_accent"
+            android:drawableLeft="@drawable/phone_80px"
+            android:drawablePadding="4sp"
+            android:hint="SĐT"
+            android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/buttonUserUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_primary_red"
+            android:drawableRight="@drawable/arroe_right"
+            android:drawablePadding="@dimen/padding_4"
+            android:text="Cập Nhật"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,3 @@
+url admin : http://localhost/ServicesHotel/Admin/
+tai khoan admin : tester
+mat khau : 12345

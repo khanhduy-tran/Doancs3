@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DoiMatKhauActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarDoiMatKhau"
+        app:titleTextColor="#FF0051"
+        android:background="#00E6FF"
+        app:title="Đổi Mật Khẩu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/editTextMatKhauCu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_back_accent"
+        android:drawableLeft="@drawable/password_80px"
+        android:drawablePadding="4sp"
+        android:hint="Mật Khẩu Cũ"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextMatKhauMoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_back_accent"
+        android:drawableLeft="@drawable/password_80px"
+        android:drawablePadding="4sp"
+        android:hint="Mật Khẩu Mới"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextNhapLaiMatKhauMoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_back_accent"
+        android:drawableLeft="@drawable/password_80px"
+        android:drawablePadding="4sp"
+        android:hint="Nhập Lại Mật Khẩu Mới"
+        android:inputType="textPassword" />
+    <Button
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/buttonXNDMK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_primary_red"
+        android:drawableRight="@drawable/arroe_right"
+        android:drawablePadding="@dimen/padding_4"
+        android:text="Xác Nhận"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@null" />
+</LinearLayout>
